@@ -1,0 +1,194 @@
+body
+{
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+}
+.container
+{
+    max-width: 90%;
+    width: 100vw;
+    margin: 0 5%;
+}
+h1
+{
+    text-transform: uppercase;
+}
+header
+{
+    height: 165px;
+    background-color: blue;
+    color: white;
+}
+.header_wrapper
+{
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 65% 35%;
+    row-gap: 35%;
+}
+.header_wrapper h1
+{
+    text-align: center;
+    grid-column: 1/5;
+}
+.header_wrapper button
+{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    background-color: unset;
+    border: unset;
+    transition: all 0.1s ease-in;
+    font-weight: bold;
+    font-size: 16px;
+    animation: emergence 1.2s ease-in-out;
+}
+.header_wrapper button:hover
+{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.header_wrapper a,a:active,a:focus
+{
+    color: white;
+    text-decoration: none;
+}
+@keyframes emergence
+{
+    0% {opacity: 0; transform: translateX(1000px);}
+    50% {opacity: 0.5; transform: translateX(-15px);}
+    75% {opacity: 1; transform: translateX(15px);}
+}
+main
+{
+    margin: 10% 0;
+}
+.main_wrapper h1
+{
+    text-align: center;
+}
+.description_wrapper
+{
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+.description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 4px solid blue;
+    padding-left: 2.5%;
+    
+}
+.description p
+{
+    line-height: 25px;
+}
+.description p:first-letter
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.row
+{
+    margin: 5% 0;
+    padding: 0 5%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+.row:hover
+{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.row:hover h2
+{
+    animation: headShake 1s;
+}
+.middle_row
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5% 5%;
+    background-color: blue;
+    color: white;
+    margin-bottom: 30%;
+}
+.bottom_row
+{
+    margin-bottom: 20%;
+}
+footer
+{
+    
+    background-color: blue;
+    color: white;
+}
+.foter_wrapper
+{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    gap: 15%;
+}
+.info
+{
+    display: flex;
+    flex-direction: column;
+}
+.contact
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons i:hover
+{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.arrow_icons
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: blue;
+}
+.arrow_icons:hover
+{
+    animation: flash 1.5s infinite;
+}
+.arrow_icons a
+{
+    color: unset;
+}
+.arrow_icons .fa
+{
+    animation: spin 1s linear 0s normal infinite;
+}
+.arrow_icons .fa:hover
+{
+    animation: spin none;
+    cursor: pointer;
+}
+@keyframes spin
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
